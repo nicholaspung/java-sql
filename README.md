@@ -99,14 +99,14 @@ Person Table
 
 Pet Name Table
 
-| Person ID | Pet ID | Pet Name   | PetType ID |
-|-----------|--------|------------|------------|
-| 1         | 1      | Ellie      | 1          |
-| 1         | 2      | Tiger      | 2          |
-| 2         | 3      | Joe        | 3          |
-| 3         | 4      | Ginger     | 1          |
-| 3         | 5      | Miss Kitty | 2          |
-| 3         | 6      | Bubble     | 4          |
+| Pet ID | Person ID | Pet Name   | PetType ID |
+|--------|-----------|------------|------------|
+| 1      | 1         | Ellie      | 1          |
+| 2      | 1         | Tiger      | 2          |
+| 3      | 2         | Joe        | 3          |
+| 4      | 3         | Ginger     | 1          |
+| 5      | 3         | Miss Kitty | 2          |
+| 6      | 3         | Bubble     | 4          |
 
 Pet Type Table
 
@@ -152,3 +152,10 @@ Living Spaces Table
   - the `id` should be the primary key for the table.
   - account `name` should be unique.
   - account `budget` is required.
+
+CREATE DATABASE budget;
+CREATE TABLE public.accounts(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR UNIQUE,
+    budget numeric(20, 2) NOT NULL
+)
