@@ -89,13 +89,15 @@ Take the following data and normalize it into a 3NF database.
 | Bob         | Joe      | Horse    |            |            |            |            | No          | No           |
 | Sam         | Ginger   | Dog      | Miss Kitty | Cat        | Bubble     | Fish       | Yes         | No           |
 
+----------------------------------------------------------------------------------------------------------------------
+
 Person Table
 
-| Person ID | Person Name | 
-|-----------|-------------|
-| 1         | Jane        |
-| 2         | Bob         |
-| 3         | Sam         |
+| Person ID | Person Name | LivingSpaces ID |
+|-----------|-------------|-----------------|
+| 1         | Jane        | 3               |
+| 2         | Bob         | 4               |
+| 3         | Sam         | 2               |
 
 Pet Name Table
 
@@ -119,13 +121,12 @@ Pet Type Table
 
 Living Spaces Table
 
-| Person ID | Fenced Yard | City Dweller |
-|-----------|-------------|--------------|
-| 1         | No          | Yes          |
-| 2         | No          | No           |
-| 3         | Yes         | No           |
-
-
+| LivingSpaces ID | Fenced Yard | City Dweller |
+|-----------------|-------------|--------------|
+| 1               | Yes         | Yes          |
+| 2               | Yes         | No           |
+| 3               | No          | Yes          |
+| 4               | No          | No           |
 
 ---
 ## Stretch Goals
