@@ -97,16 +97,33 @@ Person Table
 | 2         | Bob         |
 | 3         | Sam         |
 
-Pet Table
+Pet Name Table
 
-| Person ID | Pet Name   | Pet Type | Fenced Yard | City Dweller |
-|-----------|------------|----------|-------------|--------------|
-| 1         | Ellie      | Dog      | No          | Yes          |
-| 1         | Tiger      | Cat      | No          | Yes          |
-| 2         | Joe        | Horse    | No          | No           |
-| 3         | Ginger     | Dog      | Yes         | No           |
-| 3         | Miss Kitty | Cat      | No          | No           |
-| 3         | Bubble     | Fish     | Yes         | No           |
+| Person ID | Pet ID | Pet Name   | PetType ID |
+|-----------|--------|------------|------------|
+| 1         | 1      | Ellie      | 1          |
+| 1         | 2      | Tiger      | 2          |
+| 2         | 3      | Joe        | 3          |
+| 3         | 4      | Ginger     | 1          |
+| 3         | 5      | Miss Kitty | 2          |
+| 3         | 6      | Bubble     | 4          |
+
+Pet Type Table
+
+| PetType ID | Pet Type |
+|------------|----------|
+| 1          | Dog      |
+| 2          | Cat      |
+| 3          | Horse    |
+| 4          | Fish     |
+
+Living Spaces Table
+
+| Person ID | Fenced Yard | City Dweller |
+|-----------|-------------|--------------|
+| 1         | No          | Yes          |
+| 2         | No          | No           |
+| 3         | Yes         | No           |
 
 
 
