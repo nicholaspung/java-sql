@@ -154,9 +154,9 @@ Living Spaces Table
   - account `name` should be unique.
   - account `budget` is required.
 
-CREATE DATABASE budget;
-CREATE TABLE public.accounts(
-    id SERIAL PRIMARY KEY,
-    name VARCHAR UNIQUE,
-    budget numeric(20, 2) NOT NULL
-)
+    CREATE DATABASE budget;
+    CREATE TABLE public.accounts(
+        id SERIAL PRIMARY KEY,
+        name VARCHAR UNIQUE,
+        budget numeric(20, 2) NOT NULL
+    )
